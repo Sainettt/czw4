@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include partials/head %>
+</head>
+<body>
+    <% include partials/navigation %>
+    <h1>Success</h1>
+    <p><%= message %></p>
+    <% links.forEach(link => { %>
+        <a href="<%= link.href %>"><%= link.text %></a><br>
+    <% }); %>
+</body>
+</html>
+
+
